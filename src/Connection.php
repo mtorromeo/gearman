@@ -308,7 +308,8 @@ class Connection
             }
 
             throw new Exception(
-                $return['err_text'], $return['err_code']
+                $return['err_text'],
+                (int) $return['err_code']
             );
         }
 
